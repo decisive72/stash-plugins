@@ -25,10 +25,10 @@ buildPlugin()
 
     echo "Processing $plugin_id"
 
-    # create a directory for the version
-    version=$(git log -n 1 --pretty=format:%h -- "$dir"/*)
-    updated=$(TZ=UTC0 git log -n 1 --date="format-local:%F %T" --pretty=format:%ad -- "$dir"/*)
-    
+    # Get version and updated from the submodule's own Git history
+    version=$(git -C "$dir" log -n 1 --pretty=format:%h)
+    updated=$(TZ=UTC0 git -C "$dir" log -n 1 --date="format-local:%F %T" --pretty=format:%ad)
+
     # create the zip file
     # copy other files
     zipfile=$(realpath "$outdir/$plugin_id.zip")
