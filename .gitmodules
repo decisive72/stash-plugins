@@ -4,3 +4,6 @@
 [submodule "plugins/libmotion"]
 	path = plugins/libmotion
 	url = https://github.com/decisive72/stash-plugins-libmotion.git
+[submodule "plugins/frost-cards"]
+	path = plugins/frost-cards
+	url = https://github.com/decisive72/stash-plugins-frost-cards.git
