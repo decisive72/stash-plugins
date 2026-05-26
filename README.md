@@ -1,5 +1,8 @@
 # decisive72's Stash Plugins
 
+> [!NOTE]
+> These plugins are only tested to work on Stash v0.31.0 or above.
+
 ## Usage
 
 1. Go to Settings > Plugins
