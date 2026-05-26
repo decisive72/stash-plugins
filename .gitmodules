@@ -1,0 +1,3 @@
+[submodule "plugins/frost"]
+	path = plugins/frost
+	url = https://github.com/decisive72/stash-plugins-frost
